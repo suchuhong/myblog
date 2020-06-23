@@ -3,7 +3,7 @@ server {
     location / {
         proxy_pass http://localhost:3004;
     }
-    location / {
+    location /a/ {
         proxy_pass http://localhost:3002;
     }
 }
