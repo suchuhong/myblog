@@ -3,8 +3,7 @@ server {
     location / {
         proxy_pass http://localhost:3004;
     }
-    listen 80;
-    location /1/ {
+    location / {
         proxy_pass http://localhost:3002;
     }
 }
