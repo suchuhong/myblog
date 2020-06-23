@@ -22,7 +22,7 @@ app.secret_key = secret_key
 # 有一个 url_prefix 可以用来给蓝图中的每个路由加一个前缀
 app.register_blueprint(session_routes, url_prefix='/session')
 app.register_blueprint(blog_routes, url_prefix='/blog')
-app.register_blueprint(index_routes)
+app.register_blueprint(index_routes, url_prefix='/index')
 
 
 # 运行代码
