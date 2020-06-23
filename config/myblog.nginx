@@ -6,7 +6,7 @@ server {
 }
 server {
     listen 80;
-    location /todo {
+    location /todo/ {
         proxy_pass http://localhost:3002/todo;
     }
 }
